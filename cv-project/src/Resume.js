@@ -1,9 +1,9 @@
 import './App.css';
 
-export default function App() {
+export default function Resume() {
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
+      <h1>Resume Goes Here</h1>
       <p>Start editing to see some magic happen :)</p>
     </div>
   );
