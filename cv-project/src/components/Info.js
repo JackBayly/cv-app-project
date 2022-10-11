@@ -12,7 +12,17 @@ class Info extends React.Component {
    
     this.setState({
       [event.target.name]: event.target.value
-    }, ()=>{ console.log(this.state)});
+    }, ()=>{ 
+      let name = document.getElementById("name_Resume");
+name.textContent = this.state.name;
+let objective = document.getElementById("objective_Resume");
+objective.textContent = this.state.objective;
+let email = document.getElementById("email_Resume");
+email.textContent = this.state.email; 
+let number = document.getElementById("number_Resume");
+number.textContent = this.state.number;
+      console.log(this.state)
+    });
     
   }
 

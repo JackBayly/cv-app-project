@@ -1,0 +1,41 @@
+.container-resume {
+    width:  750px;
+    height: 900px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    margin: 0 auto;
+}
+#contact_Resume {
+    display: flex;
+    width: 100%;
+
+    justify-content: space-between}
+h2 {
+    align-self:flex-start;
+  
+}
+#objective_Align {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+#education_Align {
+    display: flex;
+    justify-content: center;
+
+}
+#job, #company {
+    font-weight: bold;
+    }
+.workDate_Resume {
+display: flex;
+justify-content: space-between;
+    }
+.skills_Align {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
