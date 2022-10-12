@@ -21,6 +21,16 @@ let email = document.getElementById("email_Resume");
 email.textContent = this.state.email; 
 let number = document.getElementById("number_Resume");
 number.textContent = this.state.number;
+let street = document.getElementById("address_Resume");
+street.textContent = this.state.street;
+let city = document.getElementById("city_Resume");
+city.textContent = this.state.city;
+let state = document.getElementById("state_Resume");
+state.textContent = this.state.state;
+let zip = document.getElementById("zipCode_Resume");
+zip.textContent = this.state.zip;
+let website = document.getElementById("website_Resume");
+website.textContent = this.state.website;
       console.log(this.state)
     });
     
@@ -49,6 +59,26 @@ number.textContent = this.state.number;
         <div class="input">
           <label for="number">Number</label>
           <input type="text" id="number" name="number" value={this.state.number} onChange={this.onInputchange}/>
+        </div>
+        <div class="input">
+          <label for="website">Portfolio (optional)</label>
+          <input type="text" id="website" name="website" value={this.state.website} onChange={this.onInputchange}/>
+        </div>
+        <div class="input">
+          <label for="street">Street Address</label>
+          <input type="text" id="street" name="street" value={this.state.street} onChange={this.onInputchange}/>
+        </div>
+        <div class="input">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" value={this.state.city} onChange={this.onInputchange}/>
+        </div>
+        <div class="input">
+          <label for="state">State</label>
+          <input type="text" id="state" name="state" value={this.state.state} onChange={this.onInputchange}/>
+        </div>
+        <div class="input">
+          <label for="zip">Zip Code</label>
+          <input type="text" id="zip" name="zip" value={this.state.zip} onChange={this.onInputchange}/>
         </div>
         <button>Save</button>
         <button>Edit</button>

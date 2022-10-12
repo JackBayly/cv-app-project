@@ -7,9 +7,8 @@ export default function Resume() {
     <div class="container-resume">
       <h1 id="name_Resume">Jack O'Hara</h1>
       <div id="contact_Resume">
-        <div id="address_Resume">3628 Rockbridge Road,<br /> Stone Mountain, GA, 30083 </div>
-        <div id="info_contact_Resume">Phone: <span id="number_Resume">404-579-5164</span><br />Email: <span id="email_Resume">jackohara96@gmail.com</span><br />GitHub:
-          github.com/JackBayly</div>
+        <div><span id="address_Resume"> 3628 Rockbridge Road</span>,<br /> <span id="city_Resume">Stone Mountain</span>, <span id="state_Resume">GA</span>, <span id="zipCode_Resume">30083</span> </div>
+        <div id="info_contact_Resume">Phone: <span id="number_Resume">404-579-5164</span><br />Email: <span id="email_Resume">jackohara96@gmail.com</span><br />Portfolio: <span id="website_Resume">github.com/JackBayly</span></div>
       </div>
 
       <div id="objective_Align">
@@ -20,10 +19,12 @@ export default function Resume() {
       <div class="skills_Align">
         <h2>Skills</h2>
         <ul id="skills_Resume">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Spanish</li>
+          <li id="skill_1_Resume">HTML</li>
+          <li id="skill_2_Resume">CSS</li>
+          <li id="skill_3_Resume">JavaScript</li>
+          <li id="skill_4_Resume">Spanish</li>
+          <li id="skill_5_Resume"></li>
+          <li id="skill_6_Resume"></li>
         </ul>
       </div>
       <div class="skills_Align">

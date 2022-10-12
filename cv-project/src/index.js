@@ -4,6 +4,7 @@ import Resume from './Resume';
 import Education from './components/Education';
 import Experience from './components/Experience';
 import Breadcrumb from './components/Breadcrumb';
+import Skills from './components/Skills';
 import './styles.css'
 
 const rootElement = document.getElementById('root');
@@ -17,6 +18,7 @@ const root = createRoot(rootElement);
       <Breadcrumb />
       <div class="container">
         <Info />
+        <Skills />
         <Education />
         <Experience />
       </div>
