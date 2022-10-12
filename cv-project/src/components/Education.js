@@ -11,7 +11,15 @@ class Education extends React.Component {
    
     this.setState({
       [event.target.name]: event.target.value
-    }, ()=>{ console.log(this.state)});
+    }, ()=>{
+       console.log(this.state);
+       document.getElementById("job").textContent = this.state.school;
+       document.getElementById("studies_Resume").textContent = this.state.studies;
+       document.getElementById("program_Resume").textContent = this.state.program;
+       document.getElementById("description_Resume").textContent = this.state.description;
+       document.getElementById("graduation_Resume").textContent = this.state.graduation;
+      }
+       );
     
   }
 
@@ -30,6 +38,14 @@ class Education extends React.Component {
         <div class="input">
           <label for="studies">Studies (Major)</label>
           <input type="text" id="studies" name="studies" value={this.state.studies} onChange={this.onInputchange} />
+        </div>
+        <div class="input">
+          <label for="program">Type of Program</label>
+          <input type="text" id="program"placeholder="Bachelors, Masters, Certificate, Bootcamp etc." name="program" value={this.state.program} onChange={this.onInputchange} />
+        </div>
+        <div class="input">
+          <label for="description">Description of Program</label>
+          <textarea id="description" name="description" value={this.state.description} onChange={this.onInputchange} />
         </div>
         <div class="input">
           <label for="graduation">Graduation</label>

@@ -30,11 +30,12 @@ export default function Resume() {
       <div class="skills_Align">
                 <h2>Education</h2>
                 <div id="education_Align">
-                    <div><span id="job">Generation USA</span>, <span id="position">junior web developer boot camp</span><br />
-                        Front-end web development program lasting 22 weeks.<br />
+                    <div><span id="job">Generation USA</span>, <span id="position"><span id="studies_Resume">Web Development</span> <span id="program_Resume">boot camp</span></span><br />
+                        <div id="description_Resume">Front-end web development program lasting 22 weeks.<br />
                         Covers web development technologies such as HTML, CSS, JavaScript, etc.
+                        </div>
                     </div>
-                    <div id="graduation">Graduation December 2022 </div>
+                    <div id="graduation">Graduation <span id="graduation_Resume">December 2022</span> </div>
 
                 </div>
             </div>
