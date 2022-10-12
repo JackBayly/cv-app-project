@@ -43,10 +43,10 @@ export default function Resume() {
             <div class="skills_Align">
             <h2>Experience</h2>
             <div class="workDate_Resume">
-                <div><span id="company">Cambly</span> <span id="place">Online</span></div>
-                <div><span> May 2021</span> - <span>Present</span></div>
+                <div><span id="company_Resume">Cambly</span>, <span id="place_Resume">Online</span></div>
+                <div><span id="startDate_Resume"> May 2021</span> to <span id="endDate_Resume">Present</span></div>
             </div>
-            <div id="position">ESL Teacher</div>
+            <div id="position_Resume">ESL Teacher</div>
             <ul id="responsibilities">
                 <li>Teach one-on-one online English classes to children, adults, and teenagers
                 </li>

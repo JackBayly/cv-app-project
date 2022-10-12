@@ -13,7 +13,13 @@ class Experience extends React.Component {
    
     this.setState({
       [event.target.name]: event.target.value
-    }, ()=>{ console.log(this.state)});
+    }, ()=>{ console.log(this.state);
+    document.getElementById("company_Resume").textContent = this.state.company;
+    document.getElementById("place_Resume").textContent = this.state.location;
+    document.getElementById("position_Resume").textContent = this.state.position;
+    document.getElementById("startDate_Resume").textContent = this.state.startDate;
+    document.getElementById("endDate_Resume").textContent = this.state.endDate;
+    });
     
   }
 
@@ -28,6 +34,10 @@ class Experience extends React.Component {
         <div class="input">
           <label for="company">Company</label>
           <input type="text" id="company" name="company" value={this.state.company} onChange={this.onInputchange} />
+        </div>
+        <div class="input">
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location" value={this.state.location} onChange={this.onInputchange} />
         </div>
         <div class="input">
           <label for="position">Position</label>
