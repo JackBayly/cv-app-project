@@ -48,11 +48,11 @@ export default function Resume() {
             </div>
             <div id="position_Resume">ESL Teacher</div>
             <ul id="responsibilities">
-                <li>Teach one-on-one online English classes to children, adults, and teenagers
+                <li id="task1_Resume">Teach one-on-one online English classes to children, adults, and teenagers
                 </li>
-                <li>Create and deliver individualized and general lesson plans based on student’s needs
+                <li id="task2_Resume">Create and deliver individualized and general lesson plans based on student’s needs
                 </li>
-                <li>Correct student mistakes using empathetic and constructive feedback techniques</li>
+                <li id="task3_Resume">Correct student mistakes using empathetic and constructive feedback techniques</li>
             </ul>
           
         </div>

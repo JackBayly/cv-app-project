@@ -7,6 +7,7 @@ class Experience extends React.Component {
     this.state = {};
     this.onInputchange = this.onInputchange.bind(this);
     this.onSubmitForm = this.onSubmitForm.bind(this);
+    this.onInputClick = this.onInputClick.bind(this);
   }
   
   onInputchange(event) {
@@ -19,10 +20,20 @@ class Experience extends React.Component {
     document.getElementById("position_Resume").textContent = this.state.position;
     document.getElementById("startDate_Resume").textContent = this.state.startDate;
     document.getElementById("endDate_Resume").textContent = this.state.endDate;
-    });
+    document.getElementById("task1_Resume").textContent = this.state.task1;
+    document.getElementById("task2_Resume").textContent = this.state.task2;
+    document.getElementById("task3_Resume").textContent = this.state.task3;
+  });
     
   }
-
+  onInputClick(event) {
+    this.setState({
+      [event.target.name]: event.target.value
+    }, ()=>{ console.log(this.state);
+    document.getElementById("endDate_Resume").textContent = this.state.present;
+   
+  });
+  }
   onSubmitForm() {
     console.log(this.state)
   }
@@ -44,10 +55,18 @@ class Experience extends React.Component {
           <input type="text" id="position" name="position" value={this.state.position} onChange={this.onInputchange} />
         </div>
         <div class="input">
-          <label for="tasks">Tasks</label>
-          <input type="text" id="tasks" name="tasks" value={this.state.tasks} onChange={this.onInputchange}  />
-          <button>Add Task</button>
+          <label for="task1">Responsibility 1 (1 - 2 sentences)</label>
+          <input type="text" id="task1" name="task1" value={this.state.task1} onChange={this.onInputchange}  />
         </div>
+        <div class="input">
+          <label for="task2">Responsibility 2 (1 - 2 sentences)</label>
+          <input type="text" id="task2" name="task2" value={this.state.task2} onChange={this.onInputchange}  />
+        </div>
+        <div class="input">
+          <label for="task3">Responsibility 3 (1 - 2 sentences)</label>
+          <input type="text" id="task3" name="task3" value={this.state.task3} onChange={this.onInputchange}  />
+        </div>
+        
         <div class="input">
           <label for="startDate">Start Date</label>
           <input type="date" id="startDate" name="startDate" value={this.state.startDate} onChange={this.onInputchange}  />
@@ -55,6 +74,7 @@ class Experience extends React.Component {
         <div class="input">
           <label for="endDate">End Date</label>
           <input type="date" id="endDate" name="endDate" value={this.state.endDate} onChange={this.onInputchange} />
+          <button type="button" id="present" name="present" value="Present" onClick={this.onInputClick} >Present Position?</button>
         </div>
         <button>Save</button>
         <button>Edit</button>
