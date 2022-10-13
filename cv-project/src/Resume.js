@@ -5,10 +5,10 @@ export default function Resume() {
   return (
     
     <div class="container-resume hide" id="resume_section">
-      <h1 id="name_Resume">Jack O'Hara</h1>
+      <h1 id="name_Resume">Jack Bayly</h1>
       <div id="contact_Resume">
-        <div><span id="address_Resume"> 3628 Rockbridge Road</span>,<br /> <span id="city_Resume">Stone Mountain</span>, <span id="state_Resume">GA</span>, <span id="zipCode_Resume">30083</span> </div>
-        <div id="info_contact_Resume">Phone: <span id="number_Resume">404-579-5164</span><br />Email: <span id="email_Resume">jackohara96@gmail.com</span><br /><span id="website_Resume"></span></div>
+        <div><span id="address_Resume"> 4444 Rockrock Road</span>,<br /> <span id="city_Resume">Atlanta</span>, <span id="state_Resume">GA</span>, <span id="zipCode_Resume">33333</span> </div>
+        <div id="info_contact_Resume">Phone: <span id="number_Resume">404-444-4444</span><br />Email: <span id="email_Resume">email@gmail.com</span><br /><span id="website_Resume"></span></div>
       </div>
 
       <div id="objective_Align">
@@ -22,17 +22,17 @@ export default function Resume() {
           <li id="skill_1_Resume">HTML</li>
           <li id="skill_2_Resume">CSS</li>
           <li id="skill_3_Resume">JavaScript</li>
-          <li id="skill_4_Resume">Spanish</li>
-          <li id="skill_5_Resume"></li>
-          <li id="skill_6_Resume"></li>
+          <li id="skill_4_Resume">React</li>
+          <li id="skill_5_Resume">Node.js</li>
+          <li id="skill_6_Resume">Spanish</li>
         </ul>
       </div>
       <div class="skills_Align">
                 <h2>Education</h2>
                 <div id="education_Align">
-                    <div><span id="job">Generation USA</span>, <span id="position"><span id="studies_Resume">Web Development</span> <span id="program_Resume">boot camp</span></span><br />
-                        <div id="description_Resume">Front-end web development program lasting 22 weeks.<br />
-                        Covers web development technologies such as HTML, CSS, JavaScript, etc.
+                    <div><span id="job">The Odin Project</span>, <span id="position"><span id="studies_Resume">Web development</span> <span id="program_Resume">boot camp</span></span><br />
+                        <div id="description_Resume">Front-end web development program.<br />
+                        Covers web development technologies such as HTML, CSS, JavaScript, React and Node.js.
                         </div>
                     </div>
                     <div id="graduation">Graduation <span id="graduation_Resume">December 2022</span> </div>

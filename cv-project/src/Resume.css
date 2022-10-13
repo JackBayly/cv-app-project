@@ -28,7 +28,7 @@ h2 {
 #education_Align {
     display: flex;
     justify-content: center;
-
+    
 }
 #job, #company {
     font-weight: bold;
