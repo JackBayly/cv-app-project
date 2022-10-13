@@ -30,7 +30,7 @@ state.textContent = this.state.state;
 let zip = document.getElementById("zipCode_Resume");
 zip.textContent = this.state.zip;
 let website = document.getElementById("website_Resume");
-website.textContent = this.state.website;
+website.textContent = `Portfolio: ${this.state.website}`;
       console.log(this.state)
     });
     
@@ -42,7 +42,7 @@ website.textContent = this.state.website;
   //make validation for inputs later
   render() {
     return (
-      <div class="section">
+      <div class="section" id="info_section">
         <h2>General Information</h2>
         <div class="input">
           <label for="name">Name</label>
@@ -80,8 +80,13 @@ website.textContent = this.state.website;
           <label for="zip">Zip Code</label>
           <input type="text" id="zip" name="zip" value={this.state.zip} onChange={this.onInputchange}/>
         </div>
-        <button>Save</button>
-        <button>Edit</button>
+        <button onClick={()=>{
+          console.log("hey");
+          document.getElementById("info_section").classList.add("hide");
+          
+          document.getElementById("skills_section").classList.remove("hide");
+          }}>Save and Continue</button>
+        
       </div>
     );
   }

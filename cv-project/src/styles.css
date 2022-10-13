@@ -27,7 +27,10 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+/*You are here!!!!*/
+.hide {
+  display: none;
+}
 input, textarea {
   width: 200px;
 }

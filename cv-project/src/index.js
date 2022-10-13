@@ -16,7 +16,7 @@ const root = createRoot(rootElement);
     <div>
       <h1 class="header">Resume Builder App</h1>
       <Breadcrumb />
-      <div class="container">
+      <div class="container" id="container">
         <Info />
         <Skills />
         <Education />

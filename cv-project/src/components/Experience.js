@@ -40,7 +40,7 @@ class Experience extends React.Component {
   //make validation for inputs later
   render() {
     return (
-      <div class="section">
+      <div class="section hide" id="experience_section">
         <h2>Experience</h2>
         <div class="input">
           <label for="company">Company</label>
@@ -76,8 +76,18 @@ class Experience extends React.Component {
           <input type="date" id="endDate" name="endDate" value={this.state.endDate} onChange={this.onInputchange} />
           <button type="button" id="present" name="present" value="Present" onClick={this.onInputClick} >Present Position?</button>
         </div>
-        <button>Save</button>
-        <button>Edit</button>
+        <button onClick={()=>{
+          
+          document.getElementById("education_section").classList.remove("hide");
+          
+          document.getElementById("experience_section").classList.add("hide");
+          }}>Go back</button>
+        <button onClick={()=>{
+          console.log("hey");
+          document.getElementById("experience_section").classList.add("hide");
+          document.getElementById("container").classList.add("hide");
+          document.getElementById("resume_section").classList.remove("hide");
+          }}>Save and Continue</button>        
       </div>
     );
   }

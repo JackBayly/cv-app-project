@@ -17,6 +17,9 @@ h2 {
     align-self:flex-start;
   
 }
+.hide {
+    display: none;
+}
 #objective_Align {
     display: flex;
     flex-direction: column;
@@ -41,4 +44,7 @@ justify-content: space-between;
 }
 #graduation {
     min-width: 40px;
+}
+#company_Resume {
+    font-weight: bold;
 }

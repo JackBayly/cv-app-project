@@ -41,7 +41,7 @@ class Skills extends React.Component {
         const skill_Id_6 = uuid();
 
         return (
-            <div class="section">
+            <div class="section hide" id="skills_section">
              
                     <h2>Skills</h2>
                     <div class="input">
@@ -68,9 +68,18 @@ class Skills extends React.Component {
                         <label for="skill_2">Skill 6</label>
                         <input type="text" id="skill_6" name="skill_6" value={this.state.skill_6} onChange={this.onInputchange} />
                     </div>
-                    <button type="button" form="skillSubmit">Save</button>
-                    <button>Edit</button>
-             
+                    <button onClick={()=>{
+          
+          document.getElementById("skills_section").classList.add("hide");
+          
+          document.getElementById("info_section").classList.remove("hide");
+          }}>Go back</button>
+                    <button onClick={()=>{
+          
+          document.getElementById("skills_section").classList.add("hide");
+          
+          document.getElementById("education_section").classList.remove("hide");
+          }}>Save and Continue</button>
             </div>
         );
     }

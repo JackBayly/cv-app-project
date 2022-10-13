@@ -4,11 +4,11 @@ export default function Resume() {
   
   return (
     
-    <div class="container-resume">
+    <div class="container-resume hide" id="resume_section">
       <h1 id="name_Resume">Jack O'Hara</h1>
       <div id="contact_Resume">
         <div><span id="address_Resume"> 3628 Rockbridge Road</span>,<br /> <span id="city_Resume">Stone Mountain</span>, <span id="state_Resume">GA</span>, <span id="zipCode_Resume">30083</span> </div>
-        <div id="info_contact_Resume">Phone: <span id="number_Resume">404-579-5164</span><br />Email: <span id="email_Resume">jackohara96@gmail.com</span><br />Portfolio: <span id="website_Resume">github.com/JackBayly</span></div>
+        <div id="info_contact_Resume">Phone: <span id="number_Resume">404-579-5164</span><br />Email: <span id="email_Resume">jackohara96@gmail.com</span><br /><span id="website_Resume"></span></div>
       </div>
 
       <div id="objective_Align">

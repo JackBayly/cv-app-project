@@ -29,7 +29,7 @@ class Education extends React.Component {
   //make validation for inputs later
   render() {
     return (
-      <div class="section">
+      <div class="section hide" id="education_section">
         <h2>Education</h2>
         <div class="input">
           <label for="school">School</label>
@@ -51,8 +51,19 @@ class Education extends React.Component {
           <label for="graduation">Graduation</label>
           <input type="date" id="graduation" name="graduation" value={this.state.graduation} onChange={this.onInputchange} />
         </div>
-        <button>Save</button>
-        <button>Edit</button>
+        <button onClick={()=>{
+          
+          document.getElementById("skills_section").classList.remove("hide");
+          
+          document.getElementById("education_section").classList.add("hide");
+          }}>Go back</button>
+        <button onClick={()=>{
+          console.log("hey");
+          document.getElementById("experience_section").classList.remove("hide");
+          
+          document.getElementById("education_section").classList.add("hide");
+          }}>Save and Continue</button>
+       
       </div>
     );
   }
